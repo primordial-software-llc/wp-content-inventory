@@ -1,0 +1,305 @@
+/**
+ * WP Content Inventory Styles
+ *
+ * @package WP Content Inventory
+ */
+
+/* Basic Layout */
+.content-inventory {
+    margin-top: 20px;
+    max-width: 1600px;
+}
+
+.content-inventory h1 {
+    margin-bottom: 25px;
+}
+
+/* Dashboard Stats */
+.content-inventory-dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.content-inventory-stat-box {
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    padding: 15px 20px;
+    min-width: 160px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-left: 4px solid #2271b1;
+}
+
+/* Template, Taxonomy, and Media Stats */
+.template-overview,
+.taxonomy-overview,
+.media-overview {
+    min-width: 280px;
+    flex: 2;
+}
+
+.template-stats,
+.taxonomy-stats,
+.media-stats {
+    list-style: none;
+    margin: 12px 0 0;
+    padding: 0;
+    max-height: 220px;
+    overflow-y: auto;
+    border-top: 1px solid #f0f0f1;
+    padding-top: 8px;
+}
+
+.template-stats li,
+.media-stats li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 13px;
+    padding: 4px 0;
+    border-bottom: 1px dotted #f0f0f1;
+}
+
+.taxonomy-stats li {
+    margin-bottom: 12px;
+    font-size: 13px;
+    padding: 4px 0 8px;
+    border-bottom: 1px dotted #f0f0f1;
+}
+
+.taxonomy-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.template-name,
+.taxonomy-name,
+.file-type {
+    font-weight: 500;
+    color: #1d2327;
+}
+
+.template-count,
+.taxonomy-count,
+.file-count {
+    color: #2271b1;
+    font-weight: 600;
+}
+
+.taxonomy-terms-list {
+    font-size: 12px;
+    color: #50575e;
+    padding: 4px 0;
+    margin-top: 2px;
+    line-height: 1.4;
+    word-break: break-word;
+    font-style: italic;
+}
+
+/* Total media size styling */
+.total-media-size {
+    margin: 10px 0;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.size-value {
+    display: block;
+    color: #2271b1;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.size-label {
+    display: block;
+    font-weight: 500;
+    font-size: 13px;
+    color: #646970;
+    text-transform: uppercase;
+}
+
+.stat-count {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1d2327;
+    margin-bottom: 5px;
+}
+
+.stat-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1d2327;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 13px;
+    color: #646970;
+    text-transform: uppercase;
+}
+
+/* Card Styling */
+.content-inventory-card {
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+    border: 1px solid #e2e4e7;
+}
+
+.content-inventory-card-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #e2e4e7;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.content-inventory-card-header-with-actions {
+    padding: 15px 20px;
+    border-bottom: 1px solid #e2e4e7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-inventory-card-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.content-inventory-card-body {
+    padding: 20px;
+}
+
+/* Form Elements */
+.content-inventory-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.content-inventory-filter-group {
+    margin-bottom: 5px;
+    min-width: 200px;
+}
+
+.content-inventory-filter-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.content-inventory-select {
+    min-width: 200px;
+    max-width: 100%;
+    height: 35px;
+    border-radius: 4px;
+    border: 1px solid #8c8f94;
+}
+
+.export-form {
+    margin: 0;
+}
+
+/* Table Styling */
+.content-inventory-table-wrap {
+    overflow-x: auto;
+}
+
+.content-inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.content-inventory-table th {
+    text-align: left;
+    padding: 10px;
+    font-weight: 600;
+    border-bottom: 1px solid #c3c4c7;
+    background-color: #f6f7f7;
+}
+
+.content-inventory-table td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #f0f0f1;
+    vertical-align: middle;
+}
+
+.content-inventory-no-results {
+    text-align: center;
+    padding: 30px !important;
+    color: #646970;
+}
+
+/* Status Indicators */
+.content-inventory-status {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    background: #f0f0f1;
+}
+
+.content-inventory-status.publish {
+    background: #dff0d8;
+    color: #3c763d;
+}
+
+.content-inventory-status.draft {
+    background: #fcf8e3;
+    color: #8a6d3b;
+}
+
+.content-inventory-status.private {
+    background: #d9edf7;
+    color: #31708f;
+}
+
+.content-inventory-status.trash {
+    background: #f2dede;
+    color: #a94442;
+}
+
+/* Taxonomy Terms */
+.content-inventory-taxonomy-terms {
+    display: inline-block;
+}
+
+.content-inventory-empty-term {
+    color: #767676;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 782px) {
+    .content-inventory-filters {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .content-inventory-filter-group {
+        width: 100%;
+    }
+    
+    .content-inventory-select {
+        width: 100%;
+    }
+    
+    .content-inventory-card-header-with-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .export-form {
+        margin-top: 10px;
+    }
+} 
